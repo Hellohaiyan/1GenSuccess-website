@@ -1,0 +1,42 @@
+Flask setup
+
+1. Create a folder for your flask project. In Visual Studio Code, open this folder. 
+2. Create a virtual enviroment: Ctrl + Shift + P. Python: Create Environment. Select Venv.
+3. Open a New Terminal in VS Code and activate the virtual enviroment:
+	./.venv/Scripts/Activate.ps1
+
+4. Install packages:
+	pip install flask
+	pip install Flask-Bcrypt
+	pip install -U Flask-SQLAlchemy
+	pip install Flask-Cors
+
+5. Add app.py and models.py if you have not done this yet.
+
+6. Run the flask app by this command line:
+	flask run
+
+
+React JS setup
+
+1. Install node.js version 20.10.0. Double click node-v20.10.0-x64.msi and follow the instructions.
+
+2. Open a PowerShell or Command Prompt window, enter the 1GenSuccess directory, and create a react app called "reactdev":
+
+   cd C:\Jack\Personal\Projects\1GenSuccess
+   npx create-react-app reactdev
+   
+3. Enter the reactdev directory and install bootstrap, React Router Dom, and Axios:
+   cd ./reactdev
+   npm i bootstrap
+   npm i react-router-dom --save
+   npm i axios --save
+
+4. Copy the src folder in 1GenSuccess\react\ to 1GenSuccess\reactdev\. Select "Replace the files in the destination".
+
+5. Open a new terminal in VS Code, or start PowerShell or Command Prompt and cd C:\Jack\Personal\Projects\reactdev\, then run the command line:
+	npm start
+
+6. If you see warnings about plugin-proposal-private-property-in-object, add the following line to the "dependencies" field of \Projects\reactdev\package.json:
+	"@babel/plugin-proposal-private-property-in-object": "^7.21.0",
+
